@@ -11,21 +11,21 @@
       "title": "Game Boy",
       "description": "A video about the original handheld console.",
       "link": "gb.hmtl",
-      "image": "game-boy.png",
+      "image": "gameboy.jpg",
       "video": "gb.mp4"
     },
     {
       "title": "Game Boy Pocket",
       "description": "A video about the revised console.",
       "link": "gb.hmtl",
-      "image": "game-boy-pocket.png",
+      "image": "gameboy-pocket.jpg",
       "video": "gbp.mp4"
     },
     {
       "title": "Game Boy Color",
       "description": "A video about the color revision.",
       "link": "gb.hmtl",
-      "image": "game-boy-color.png",
+      "image": "gameboy-color.jpg",
       "video": "gbc.mp4"
     }
   ]
