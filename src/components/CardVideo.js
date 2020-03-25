@@ -5,10 +5,10 @@ class CardVideo extends Component {
 	// Render
 	render() {
 		return (
-			<article>
-				<h1>{this.props.title}</h1>
-				<p>{this.props.description}</p>
-			</article>
+			<a href={this.props.prop.link} target="_blank">
+				<h1>{this.props.prop.title}!!!</h1>
+				<p>{this.props.prop.description}</p>
+			</a>
 		)
 	}
 }

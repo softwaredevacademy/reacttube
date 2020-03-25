@@ -1,16 +1,32 @@
 {
   "videos": [
     {
+      "title": "Boom: The Future of Supersonic Flight?",
+      "description": "Thank you to my patreon supporters: Adam Flohr, darth patron, Zoltan Gramantik, Josh Levent, Henning Basma, Karl Andersson, Mark Govea, Mershal Alshammari, Hank Green, Tony Kuchta, Sam Stockdale, Jason A. Diegmueller, Chris Plays Games, Peter Hogan-De Paul, William Leu, Frejden Jarrett, Vincent Mooney & Ian Dundore",
+      "link": "flight.html",
+      "image": "flight.jpg",
+      "video": "flight.mp4"
+    },
+    {
       "title": "Game Boy",
-      "description": "A video about the original handheld console."
+      "description": "A video about the original handheld console.",
+      "link": "gb.hmtl",
+      "image": "game-boy.png",
+      "video": "gb.mp4"
     },
     {
       "title": "Game Boy Pocket",
-      "description": "A video about the revised console."
+      "description": "A video about the revised console.",
+      "link": "gb.hmtl",
+      "image": "game-boy-pocket.png",
+      "video": "gbp.mp4"
     },
     {
       "title": "Game Boy Color",
-      "description": "A video about the color revision."
+      "description": "A video about the color revision.",
+      "link": "gb.hmtl",
+      "image": "game-boy-color.png",
+      "video": "gbc.mp4"
     }
   ]
 }
