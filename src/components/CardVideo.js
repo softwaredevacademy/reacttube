@@ -1,6 +1,8 @@
+// React core
 import React, { Component } from 'react';
 
-class CardVideo extends React.Component {
+class CardVideo extends Component {
+	// Render
 	render() {
 		return (
 			<article>

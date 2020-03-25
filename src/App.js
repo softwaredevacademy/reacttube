@@ -1,21 +1,26 @@
+// React core
 import React, { Component } from 'react';
+
+// Components
 import CardList from './components/CardList';
-import './App.css';
+import Header from './components/Header';
+
+// Style
+import './css/style.css';
 
 class App extends Component {
-	data = [
+	// Data
+	cards = [
 		{ title: "Game Boy", description: "A video about the original handheld console." },
 		{ title: "Game Boy Pocket", description: "A video about the revised console." },
 		{ title: "Game Boy Color", description: "A video about the color revision." }
 	]
 
+	// Render
 	render() {
 		return (
 			<main className="App">
-				<header>
-					<h1>React-Tube</h1>
-				</header>
-
+				<Header />
 				<CardList cards={this.data} />
 			</main>
 		)
