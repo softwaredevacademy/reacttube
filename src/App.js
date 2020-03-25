@@ -10,7 +10,7 @@ import './css/style.css';
 
 class App extends Component {
 	// Data
-	cards = [
+	videos = [
 		{ title: "Game Boy", description: "A video about the original handheld console." },
 		{ title: "Game Boy Pocket", description: "A video about the revised console." },
 		{ title: "Game Boy Color", description: "A video about the color revision." }
@@ -21,7 +21,7 @@ class App extends Component {
 		return (
 			<main className="App">
 				<Header />
-				<CardList cards={this.data} />
+				<CardList prop={this.videos} />
 			</main>
 		)
 	};

@@ -1,0 +1,16 @@
+{
+  "videos": [
+    {
+      "title": "Game Boy",
+      "description": "A video about the original handheld console."
+    },
+    {
+      "title": "Game Boy Pocket",
+      "description": "A video about the revised console."
+    },
+    {
+      "title": "Game Boy Color",
+      "description": "A video about the color revision."
+    }
+  ]
+}

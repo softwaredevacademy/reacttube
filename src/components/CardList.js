@@ -6,14 +6,13 @@ import CardVideo from "./CardVideo";
 
 class CardList extends Component {
     // Data
-    cards = this.props.cards;
-    list = this.cards.map((item) =>
+    card = this.props.prop.map((item) =>
         <CardVideo title={item.title} description={item.description} />
     );
 
     // Render
     render() {
-        return <ul>{this.list}</ul>
+        return <ul>{this.card}</ul>
     }
 }
 
