@@ -15,10 +15,13 @@ function VideoPage({ match }) {
       <div className="video-container">
         <video controls src={require('../videos/' + video.video)} />
       </div>
-      <h1>{video.title}</h1>
-      <p>{video.description}</p>
-      <hr />
-      <Link to="/">Back to home</Link>
+      <div className="body-container">
+        <h1 className="title">{video.title}</h1>
+        <p className="author">{video.author}</p>
+        <p className="description">{video.description}</p>
+        <hr />
+        <Link className="button" to="/">Back to home</Link>
+      </div>
     </div>
   )
 }

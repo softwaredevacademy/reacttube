@@ -1,7 +1,6 @@
 .Card {
   box-sizing: border-box;
   margin: 0 auto 32px auto;
-  font-weight: 300;
 }
 
 .Card img {

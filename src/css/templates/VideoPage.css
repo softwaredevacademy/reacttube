@@ -1,5 +1,16 @@
+.VideoPage {
+  padding-bottom: 32px;
+}
+
 .VideoPage .video-container {
   background-color: black;
+  margin-bottom: 24px;
+}
+
+.VideoPage .body-container {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .VideoPage video {
@@ -9,9 +20,36 @@
   height: auto;
 }
 
+.VideoPage .title {
+  font-size: 21px;
+}
+
+.VideoPage .description {
+  font-size: 14px;
+  max-width: 640px;
+}
+
+.VideoPage .button {
+  padding: 8px 8px;
+  font-weight: bold;
+  color: black;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.VideoPage .button:hover {
+  background-color: black;
+  color: white;
+}
+
 /* YouTube breakpoints */
 @media only screen and (min-width: 900px) {
   .VideoPage video {
     width: 850px;
+  }
+  .VideoPage .body-container {
+    padding: 0;
+    max-width: 960px;
   }
 }
