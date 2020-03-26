@@ -1,18 +1,33 @@
 .Card {
   box-sizing: border-box;
-  margin: 0 auto 32px auto;
+  margin: 0 auto 8px auto;
 }
 
-.Card img {
+.Card .preview {
   width: 100%;
   height: auto;
   margin-bottom: 8px;
 }
 
+.Card .meta-data {
+  display: flex;
+  padding: 0 8px;
+  flex-direction: row;
+}
+
+.Card .meta-data .left {
+  margin-right: 8px;
+}
+
+.Card .channel-thumb {
+  border-radius: 500px; /* A high radius to make it round */
+  width: 36px;
+  height: auto;
+}
+
 .Card .title,
 .Card .description {
-  margin: 0 16px;
-  font-size: 15px;
+  font-size: 14px;
   user-select: none;
   cursor: default;
 }
@@ -23,4 +38,10 @@
 
 .Card .description {
   color: grey;
+}
+
+@media only screen and (min-width: 900px) {
+  .Card .meta-data {
+    padding: 0;
+  }
 }

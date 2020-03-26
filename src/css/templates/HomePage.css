@@ -1,5 +1,5 @@
 .HomePage {
-  height: 100vh; /* 100vh forces to cover the screen. 100% only cover the screen if there is a lot of content. */
+  height: 100%; /* 100vh forces to cover the screen. 100% only cover the screen if there is a lot of content. */
 }
 
 .HomePage .container {
@@ -8,8 +8,8 @@
   max-width: 320px;
 }
 
-.HomePage .title {
-  margin-left: 8px;
+.HomePage .container > .title {
+  padding-left: 8px;
   margin-bottom: 16px;
   font-size: 24px;
 }
@@ -30,6 +30,10 @@
   .HomePage .container {
     padding-left: 20px;
     padding-right: 20px;
+  }
+  
+  .HomePage .container .title {
+    padding-left: 0;
   }
 }
 
