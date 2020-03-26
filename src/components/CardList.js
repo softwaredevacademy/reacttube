@@ -1,19 +1,18 @@
 // React core
-import React, { Component } from 'react';
+import React from 'react';
 
 // Components
 import CardVideo from "./CardVideo";
 
-class CardList extends Component {
+function CardList(props) {
     // Data
-    card = this.props.prop.map((item) =>
+    const card = props.prop.map((item) =>
         <CardVideo key={item.id} prop={item} />
     );
 
     // Render
-    render() {
-        return <ul>{this.card}</ul>
-    }
+    return <ul>{card}</ul>
+
 }
 
 export default CardList;

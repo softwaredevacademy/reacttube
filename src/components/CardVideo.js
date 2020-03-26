@@ -1,19 +1,18 @@
 // React core
-import React, { Component } from 'react';
+import React from 'react';
+import { Link } from "react-router-dom";
 
-class CardVideo extends Component {
+function CardVideo(props) {
 	// Render
-	render() {
-		return (
-			<article className="CardVideo">
-				<a href={this.props.prop.link} target="_blank">
-					<img src={require('../images/' + this.props.prop.image)}></img>
-				</a>
-				<h1>{this.props.prop.title}</h1>
-				<p>{this.props.prop.description}</p>
-			</article>
-		)
-	}
+	return (
+		<article className="CardVideo">
+			<Link to={'/video/' + props.prop.id}>
+				<img src={require('../images/' + props.prop.image)} alt={props.prop.description}></img>
+			</Link>
+			<h1>{props.prop.title}</h1>
+			<p>{props.prop.description}</p>
+		</article>
+	)
 }
 
 export default CardVideo;

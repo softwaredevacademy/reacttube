@@ -21,7 +21,7 @@ class App extends Component {
 					<Header />
 					<Switch>
 						<Route path="/" exact component={Home} />
-						<Route path="/video" component={Video} />
+						<Route path="/video:id" component={Video} />
 					</Switch>
 				</main>
 			</Router>

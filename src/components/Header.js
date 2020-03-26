@@ -1,28 +1,20 @@
 // React core
-import React, { Component } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 
-class Header extends React.Component {
+function Header() {
 	// Style
-	linkStyle = {
-		'color': 'red',
-		'text-decoration': 'none'
+	const linkStyle = {
+		color: 'red',
+		textDecoration: 'none'
 	}
 
 	// Render
-	render() {
-		return (
-			<header>
-				<h1>React-Tube</h1>
-				<nav>
-					<ul>
-						<li><Link style={this.linkStyle} to="/">Home</Link></li>
-						<li><Link style={this.linkStyle} to="/video">Video</Link></li>
-					</ul>
-				</nav>
-			</header>
-		)
-	}
+	return (
+		<header>
+			<h1><Link style={linkStyle} to="/">React-Tube</Link></h1>
+		</header >
+	)
 }
 
 export default Header;

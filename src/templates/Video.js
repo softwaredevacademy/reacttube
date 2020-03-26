@@ -1,15 +1,19 @@
-import React, { Component } from 'react';
+// React core
+import React from 'react';
+import { Link } from "react-router-dom";
 
-class Video extends Component {
+function Video({ match }) {
+  // Data
+  console.log(match);
+
   // Render
-  render() {
-    return (
-      <div className="Video">
-        <h1>Video page</h1>
-        <p>Video name goes here...</p>
-      </div>
-    )
-  }
+  return (
+    <div className="Video">
+      <h1>Video page</h1>
+      <p>Video name goes here...</p>
+      <Link to="/">Back to home</Link>
+    </div>
+  )
 }
 
 export default Video;
