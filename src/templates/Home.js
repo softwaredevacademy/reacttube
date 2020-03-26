@@ -4,13 +4,13 @@ import React from 'react';
 // Components
 import CardGrid from '../modules/CardGrid';
 
-function Home() {
+function HomePage() {
   // Data
   const json = require("../videos.json");
 
   // Render
   return (
-    <div className="Home">
+    <div className="HomePage">
       <div className="container">
         <h1 className="title">Recommended</h1>
         <CardGrid prop={json.videos} />
@@ -19,4 +19,4 @@ function Home() {
   )
 }
 
-export default Home;
+export default HomePage;

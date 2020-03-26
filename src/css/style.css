@@ -12,8 +12,8 @@ The order must be from broad to specific, thats why we import in this order:
 @import url('./base/layout.css');
 
 /* Templates */
-@import url('./templates/Home.css');
-@import url('./templates/Videos.css');
+@import url('./templates/HomePage.css');
+@import url('./templates/VideoPage.css');
 
 /* Modules */
 @import url('./modules/Card.css');

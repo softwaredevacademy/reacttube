@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function Video({ match }) {
+function VideoPage({ match }) {
   // Data
   // Data
   const json = require("../videos.json");
@@ -11,14 +11,14 @@ function Video({ match }) {
 
   // Render
   return (
-    <div className="Video">
+    <div className="VideoPage">
+      <video controls width="640" height="360" src={require('../videos/' + video.video)} />
       <h1>{video.title}</h1>
       <p>{video.description}</p>
-      <video controls width="640" height="360" src={require('../videos/' + video.video)} />
       <hr />
       <Link to="/">Back to home</Link>
     </div>
   )
 }
 
-export default Video;
+export default VideoPage;

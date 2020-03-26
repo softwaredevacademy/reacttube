@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Header from './modules/Header';
 
 // Templates
-import Home from './templates/Home';
-import Video from './templates/Video';
+import HomePage from './templates/HomePage';
+import VideoPage from './templates/VideoPage';
 
 // Style
 import './css/style.css';
@@ -20,8 +20,8 @@ class App extends Component {
 				<main className="App">
 					<Header />
 					<Switch>
-						<Route path="/" exact component={Home} />
-						<Route path="/video/:id" component={Video} />
+						<Route path="/" exact component={HomePage} />
+						<Route path="/video/:id" component={VideoPage} />
 					</Switch>
 				</main>
 			</Router>
