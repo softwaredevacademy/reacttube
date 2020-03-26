@@ -1,0 +1,11 @@
+.Card {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  border: solid 1px grey;
+  font-weight: 300;
+}
+.Card h1,
+.Card p {
+  user-select: none;
+  cursor: default;
+}
