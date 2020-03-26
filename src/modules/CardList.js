@@ -11,7 +11,7 @@ function CardList(props) {
     );
 
     // Render
-    return <ul className="CardList">{card}</ul>
+    return <section className="CardList">{card}</section>
 }
 
 export default CardList;

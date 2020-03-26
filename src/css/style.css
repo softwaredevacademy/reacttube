@@ -8,6 +8,19 @@ The order must be from broad to specific, thats why we import in this order:
 4. Components
 */
 
+/* 
+Note:
+We put card code in the list file, because this lines modify positioning, not visual style
+
+Query sizes:
+- 0px default
+- 400px mobile
+- 550px phablet
+- 750px tablet
+- 1000px desktop
+- 1200px desktop HD
+*/
+
 /* Base */
 @import url('./base/layout.css');
 

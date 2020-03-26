@@ -7,3 +7,24 @@
   margin-bottom: 16px;
   font-size: 24px;
 }
+
+@media only screen and (min-width: 400px) {
+  .Home {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  .Home {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .Home {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}

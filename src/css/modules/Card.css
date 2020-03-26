@@ -1,18 +1,18 @@
 .Card {
   box-sizing: border-box;
-  margin-bottom: 32px;
+  margin: 0 auto 32px auto;
   font-weight: 300;
 }
 
 .Card img {
+  width: 100%;
+  height: auto;
   margin-bottom: 8px;
 }
 
 .Card .title,
 .Card .description {
-  margin-left: 16px;
-  margin-right: 16px;
-  margin-bottom: 0;
+  margin: 0 16px;
   font-size: 15px;
   user-select: none;
   cursor: default;
