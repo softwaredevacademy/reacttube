@@ -6,8 +6,8 @@ function VideoPage({ match }) {
   // Data
   // Data
   const json = require("../videos.json");
-  const id = match.params.id;
-  const video = json.videos.find(object => object.id == id);
+  const id = Number(match.params.id); // convert to number to do an exact equality comparisson
+  const video = json.videos.find(object => object.id === id);
 
   // Render
   return (
@@ -17,7 +17,7 @@ function VideoPage({ match }) {
       </header >
 
       <div className="video-container">
-        <video controls src={require('../videos/' + video.media + '.mp4')} />
+        <video controls autoPlay src={require('../videos/' + video.media + '.mp4')} />
       </div>
 
       <div className="body-container">
