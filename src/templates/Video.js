@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 function Video({ match }) {
   // Data
   // Data
-  const json = require("../json/videos.json");
+  const json = require("../videos.json");
   const id = match.params.id;
   const video = json.videos.find(object => object.id == id);
 
