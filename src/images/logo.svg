@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="503px" height="113px" viewBox="0 0 503 113" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M133.6805,24.02075 C132.11025,18.10825 127.48375,13.45175 121.6095,11.8715 C110.962,9 68.26675,9 68.26675,9 C68.26675,9 25.57175,9 14.924,11.8715 C9.04975,13.452 4.42325,18.10825 2.853,24.02075 C0,34.7375 0,57.097 0,57.097 C0,57.097 0,79.4565 2.853,90.17325 C4.42325,96.08575 9.04975,100.54825 14.924,102.1285 C25.57175,105 68.26675,105 68.26675,105 C68.26675,105 110.96175,105 121.6095,102.1285 C127.48375,100.54825 132.11025,96.08575 133.6805,90.17325 C136.5335,79.4565 136.5335,57.097 136.5335,57.097 C136.5335,57.097 136.5335,34.7375 133.6805,24.02075 Z M54.303,77.39775 L54.303,36.79625 L89.98775,57.0975 L54.303,77.39775 Z" id="Shape" fill="#FF0000" fill-rule="nonzero"></path>
+        <text id="ReactTube" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-size="96" font-style="condensed" font-weight="bold" letter-spacing="-5" fill="#212121">
+            <tspan x="146" y="92">ReactTub</tspan>
+            <tspan x="457.84" y="92">e</tspan>
+        </text>
+    </g>
+</svg>
