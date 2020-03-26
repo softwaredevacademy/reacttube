@@ -23,6 +23,8 @@ Class naming:
 /* Modules */
 @import url('./modules/Card.css');
 @import url('./modules/Header.css');
+@import url('./modules/meta-data.css');
 
 /* Components */
 @import url('./components/typography.css');
+@import url('./components/horizonal-rule.css');

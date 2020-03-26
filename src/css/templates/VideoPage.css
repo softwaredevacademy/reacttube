@@ -20,6 +20,10 @@
   height: auto;
 }
 
+.VideoPage .channel-thumb {
+  width: 48px !important; /* overrides meta-data size */
+}
+
 .VideoPage .title {
   font-size: 21px;
 }
