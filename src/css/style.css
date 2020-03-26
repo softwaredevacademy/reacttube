@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
 
 .App {
+  background-color: red;
   text-align: center;
   font-family: 'Roboto', sans-serif;
 }
