@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import Header from './components/Header';
+import Header from './modules/Header';
 
 // Templates
 import Home from './templates/Home';

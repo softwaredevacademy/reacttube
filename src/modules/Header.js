@@ -11,8 +11,8 @@ function Header() {
 
 	// Render
 	return (
-		<header>
-			<h1><Link style={linkStyle} to="/">React-Tube</Link></h1>
+		<header className="Header">
+			<Link style={linkStyle} to="/"><img src={require('../images/logo.svg')} alt="React-Tube logo" /></Link>
 		</header >
 	)
 }

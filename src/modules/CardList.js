@@ -2,17 +2,16 @@
 import React from 'react';
 
 // Components
-import CardVideo from "./CardVideo";
+import Card from "./Card";
 
 function CardList(props) {
     // Data
     const card = props.prop.map((item) =>
-        <CardVideo key={item.id} prop={item} />
+        <Card key={item.id} prop={item} />
     );
 
     // Render
-    return <ul>{card}</ul>
-
+    return <ul className="CardList">{card}</ul>
 }
 
 export default CardList;

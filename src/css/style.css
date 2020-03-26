@@ -1,18 +1,53 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+/* #Base */
+/* ## Layour */
+body {
+  margin: 0;
+}
 
 .App {
-  background-color: red;
-  text-align: center;
+  background-color: #F9F9F9;
+  color: #212121;
   font-family: 'Roboto', sans-serif;
 }
 
-.CardVideo {
-  background-color: #FCFCFC;
-  font-weight: 300;
-  color: lightslategray;
+/* #Component */
+/* Typograhpy */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,500&display=swap');
+
+h1 {
+  margin-top: 0;
 }
-.CardVideo h1,
-.CardVideo p {
+
+/* Modules */
+/* Card */
+.Card {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  border: solid 1px grey;
+  font-weight: 300;
+}
+.Card h1,
+.Card p {
   user-select: none;
   cursor: default;
+}
+
+/* CardList */
+.CardList {
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.Header {
+  display: flex;
+  align-items: center;
+  height: 56px;
+  background-color: white;
+}
+
+.Header img {
+  max-width: 120px;
+  height: auto;
+  margin-left: 16px;
 }

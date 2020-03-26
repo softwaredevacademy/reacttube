@@ -2,17 +2,17 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 
-function CardVideo(props) {
+function Card(props) {
 	// Render
 	return (
-		<article className="CardVideo">
+		<article className="Card">
 			<Link to={'/video/' + props.prop.id}>
 				<img src={require('../images/' + props.prop.image)} alt={props.prop.description}></img>
 			</Link>
 			<h1>{props.prop.title}</h1>
-			<p>{props.prop.description}</p>
+			<p>{props.prop.author}</p>
 		</article>
 	)
 }
 
-export default CardVideo;
+export default Card;

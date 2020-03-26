@@ -2,6 +2,7 @@
   "videos": [
     {
       "id": 1,
+      "author": "Real Engineering",
       "title": "Boom: The Future of Supersonic Flight?",
       "description": "Thank you to my patreon supporters: Adam Flohr, darth patron, Zoltan Gramantik, Josh Levent, Henning Basma, Karl Andersson, Mark Govea, Mershal Alshammari, Hank Green, Tony Kuchta, Sam Stockdale, Jason A. Diegmueller, Chris Plays Games, Peter Hogan-De Paul, William Leu, Frejden Jarrett, Vincent Mooney & Ian Dundore",
       "image": "flight.jpg",
@@ -10,6 +11,7 @@
     {
       "id": 2,
       "title": "Game Boy",
+      "author": "Austin Evans",
       "description": "A video about the original handheld console.",
       "image": "gameboy.jpg",
       "video": "original-gameboy.mp4"
@@ -17,12 +19,14 @@
     {
       "id": 3,
       "title": "Game Boy Pocket",
+      "author": "Classic Gameroom",
       "description": "A video about the revised console.",
       "image": "gameboy-pocket.jpg",
       "video": "gameboy-pocket-review.mp4"
     },
     {
       "id": 4,
+      "author": "Austin Evans",
       "title": "Nintendo Game Boy Color Unboxing!",
       "description": "A video about the color revision.",
       "image": "gameboy-color.jpg",

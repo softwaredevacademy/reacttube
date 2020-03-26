@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Components
-import CardList from '../components/CardList';
+import CardList from '../modules/CardList';
 
 function Home() {
   // Data
