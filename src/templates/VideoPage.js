@@ -12,7 +12,9 @@ function VideoPage({ match }) {
   // Render
   return (
     <div className="VideoPage">
-      <video controls width="640" height="360" src={require('../videos/' + video.video)} />
+      <div className="video-container">
+        <video controls src={require('../videos/' + video.video)} />
+      </div>
       <h1>{video.title}</h1>
       <p>{video.description}</p>
       <hr />

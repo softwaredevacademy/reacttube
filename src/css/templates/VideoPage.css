@@ -1,3 +1,17 @@
-.Video {
-  
+.VideoPage .video-container {
+  background-color: black;
+}
+
+.VideoPage video {
+  display: block; /* To remove a small space on the bottom */
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+
+/* YouTube breakpoints */
+@media only screen and (min-width: 900px) {
+  .VideoPage video {
+    width: 850px;
+  }
 }
