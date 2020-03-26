@@ -4,13 +4,22 @@ import { Link } from "react-router-dom";
 
 function Video({ match }) {
   // Data
-  console.log(match);
+  // Data
+  const json = require("../json/videos.json");
+  const id = match.params.id;
+  const video = json.videos.find(object => object.id == id);
 
   // Render
   return (
     <div className="Video">
-      <h1>Video page</h1>
-      <p>Video name goes here...</p>
+      <h1>{video.title}</h1>
+      <p>{video.description}</p>
+
+      <video width="320" height="180" src={video.video} />
+      <video width="320" height="180" >
+        <source src={video.video} />
+      </video>
+
       <Link to="/">Back to home</Link>
     </div>
   )

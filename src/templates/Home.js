@@ -1,21 +1,19 @@
 // React core
-import React, { Component } from 'react';
+import React from 'react';
 
 // Components
 import CardList from '../components/CardList';
 
-class Home extends Component {
+function Home() {
   // Data
-  json = require("../json/videos.json");
+  const json = require("../json/videos.json");
 
   // Render
-  render() {
-    return (
-      <div className="Home">
-        <CardList prop={this.json.videos} />
-      </div>
-    )
-  }
+  return (
+    <div className="Home">
+      <CardList prop={json.videos} />
+    </div>
+  )
 }
 
 export default Home;
