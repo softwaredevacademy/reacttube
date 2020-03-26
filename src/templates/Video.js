@@ -14,9 +14,8 @@ function Video({ match }) {
     <div className="Video">
       <h1>{video.title}</h1>
       <p>{video.description}</p>
-
-      <video width="320" height="180" src={require('../videos/' + video.video)} />
-
+      <video controls width="640" height="360" src={require('../videos/' + video.video)} />
+      <hr />
       <Link to="/">Back to home</Link>
     </div>
   )
