@@ -9,8 +9,8 @@ function Card(props) {
 			<Link to={'/video/' + props.prop.id}>
 				<img src={require('../images/' + props.prop.image)} alt={props.prop.description}></img>
 			</Link>
-			<h1>{props.prop.title}</h1>
-			<p>{props.prop.author}</p>
+			<h1 className="title">{props.prop.title}</h1>
+			<p className="description">{props.prop.author}</p>
 		</article>
 	)
 }

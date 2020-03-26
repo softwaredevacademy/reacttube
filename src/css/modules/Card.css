@@ -1,11 +1,27 @@
 .Card {
   box-sizing: border-box;
-  margin-bottom: 24px;
-  border: solid 1px grey;
+  margin-bottom: 32px;
   font-weight: 300;
 }
-.Card h1,
-.Card p {
+
+.Card img {
+  margin-bottom: 8px;
+}
+
+.Card .title,
+.Card .description {
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 0;
+  font-size: 15px;
   user-select: none;
   cursor: default;
+}
+
+.Card .title {
+  margin-bottom: 8px;
+}
+
+.Card .description {
+  color: grey;
 }
