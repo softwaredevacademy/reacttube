@@ -12,9 +12,14 @@ function VideoPage({ match }) {
   // Render
   return (
     <div className="VideoPage">
+      <header className="Header dark">
+        <Link to="/"><img src={require('../images/logo-dark.svg')} alt="ReactTube logo" /></Link>
+      </header >
+
       <div className="video-container">
         <video controls src={require('../videos/' + video.video)} />
       </div>
+
       <div className="body-container">
         <h1 className="title">{video.title}</h1>
         <p className="author">{video.author}</p>

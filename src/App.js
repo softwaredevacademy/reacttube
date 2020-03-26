@@ -2,9 +2,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// Components
-import Header from './modules/Header';
-
 // Templates
 import HomePage from './templates/HomePage';
 import VideoPage from './templates/VideoPage';
@@ -18,7 +15,6 @@ class App extends Component {
 		return (
 			<Router>
 				<main className="App">
-					<Header />
 					<Switch>
 						<Route path="/" exact component={HomePage} />
 						<Route path="/video/:id" component={VideoPage} />

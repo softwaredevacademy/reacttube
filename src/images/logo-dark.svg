@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="537px" height="96px" viewBox="0 0 537 96" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>logo-dark</title>
+    <desc>Created with Sketch.</desc>
+    <g id="logo-dark" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M133.6805,15.02075 C132.11025,9.10825 127.48375,4.45175 121.6095,2.8715 C110.962,0 68.26675,0 68.26675,0 C68.26675,0 25.57175,0 14.924,2.8715 C9.04975,4.452 4.42325,9.10825 2.853,15.02075 C0,25.7375 0,48.097 0,48.097 C0,48.097 0,70.4565 2.853,81.17325 C4.42325,87.08575 9.04975,91.54825 14.924,93.1285 C25.57175,96 68.26675,96 68.26675,96 C68.26675,96 110.96175,96 121.6095,93.1285 C127.48375,91.54825 132.11025,87.08575 133.6805,81.17325 C136.5335,70.4565 136.5335,48.097 136.5335,48.097 C136.5335,48.097 136.5335,25.7375 133.6805,15.02075 Z" id="Path" fill="#FF0000" fill-rule="nonzero"></path>
+        <polygon id="Path" fill="#FFFFFF" fill-rule="nonzero" points="54.303 68.39775 54.303 27.79625 89.98775 48.0975"></polygon>
+        <text id="ReactTube" font-family="HelveticaNeue-CondensedBold, Helvetica Neue" font-size="96" font-style="condensed" font-weight="bold" letter-spacing="-0.25" fill="#FFFFFF">
+            <tspan x="146" y="83">ReactTub</tspan>
+            <tspan x="495.84" y="83">e</tspan>
+        </text>
+    </g>
+</svg>
