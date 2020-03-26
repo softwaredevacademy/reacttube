@@ -7,7 +7,7 @@ import CardVideo from "./CardVideo";
 class CardList extends Component {
     // Data
     card = this.props.prop.map((item) =>
-        <CardVideo prop={item}/>
+        <CardVideo key={item.id} prop={item} />
     );
 
     // Render

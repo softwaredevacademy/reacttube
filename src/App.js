@@ -1,28 +1,32 @@
 // React core
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 // Components
-import CardList from './components/CardList';
 import Header from './components/Header';
+
+// Templates
+import Home from './templates/Home';
+import Video from './templates/Video';
 
 // Style
 import './css/style.css';
 
 class App extends Component {
-	// Data
-	json = require("./json/videos.json");
-
 	// Render
 	render() {
 		return (
-			<main className="App">
-				<Header />
-				<CardList prop={this.json.videos} />
-			</main>
+			<Router>
+				<main className="App">
+					<Header />
+					<Switch>
+						<Route path="/" exact component={Home} />
+						<Route path="/video" component={Video} />
+					</Switch>
+				</main>
+			</Router>
 		)
 	};
 }
-
-
 
 export default App;
