@@ -19,14 +19,14 @@
       "title": "Game Boy Pocket",
       "description": "A video about the revised console.",
       "image": "gameboy-pocket.jpg",
-      "video": "gameboy-pocket.mp4"
+      "video": "gameboy-pocket-review.mp4"
     },
     {
       "id": 4,
       "title": "Nintendo Game Boy Color Unboxing!",
       "description": "A video about the color revision.",
       "image": "gameboy-color.jpg",
-      "video": "gbc.mp4"
+      "video": "gameboy-color-unboxing.mp4"
     }
   ]
 }

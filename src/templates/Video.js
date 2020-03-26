@@ -15,10 +15,7 @@ function Video({ match }) {
       <h1>{video.title}</h1>
       <p>{video.description}</p>
 
-      <video width="320" height="180" src={video.video} />
-      <video width="320" height="180" >
-        <source src={video.video} />
-      </video>
+      <video width="320" height="180" src={require('../videos/' + video.video)} />
 
       <Link to="/">Back to home</Link>
     </div>
