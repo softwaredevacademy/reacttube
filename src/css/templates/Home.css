@@ -19,7 +19,7 @@
   .Home .container {
     max-width: calc(2 * 320px + 16px); /* the max width is 2 columns + the gap */
   }
-  .Home .CardList {
+  .Home .CardGrid {
     display: grid; /* the native way of creating columns withouth hacks or frameworks */
     grid-template-columns: 1fr 1fr; /* each fr is a equal space column. */
     grid-column-gap: 16px;
@@ -38,7 +38,7 @@
     max-width: calc(3 * 320px + 16px);
   }
 
-  .Home .CardList {
+  .Home .CardGrid {
     grid-template-columns: 1fr 1fr 1fr; 
   }
 }
@@ -48,7 +48,7 @@
     max-width: calc(4 * 320px + 16px);
   }
 
-  .Home .CardList {
+  .Home .CardGrid {
     grid-template-columns: 1fr 1fr 1fr 1fr; 
   }
 }
@@ -58,7 +58,7 @@
     max-width: calc(5 * 320px + 16px);
   }
 
-  .Home .CardList {
+  .Home .CardGrid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
   }
 }

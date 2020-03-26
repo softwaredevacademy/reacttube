@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Components
-import CardList from '../modules/CardList';
+import CardGrid from '../modules/CardGrid';
 
 function Home() {
   // Data
@@ -13,7 +13,7 @@ function Home() {
     <div className="Home">
       <div className="container">
         <h1 className="title">Recommended</h1>
-        <CardList prop={json.videos} />
+        <CardGrid prop={json.videos} />
       </div>
     </div>
   )
