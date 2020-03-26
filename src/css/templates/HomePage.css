@@ -1,14 +1,14 @@
-.Home {
+.HomePage {
   height: 100vh; /* 100vh forces to cover the screen. 100% only cover the screen if there is a lot of content. */
   padding-top: 32px;
 }
 
-.Home .container {
+.HomePage .container {
   margin: 0 auto;
   max-width: 320px;
 }
 
-.Home .title {
+.HomePage .title {
   margin-left: 8px;
   margin-bottom: 16px;
   font-size: 24px;
@@ -16,10 +16,10 @@
 
 /* YouTube breakpoints */
 @media only screen and (min-width: 500px) {
-  .Home .container {
+  .HomePage .container {
     max-width: calc(2 * 320px + 16px); /* the max width is 2 columns + the gap */
   }
-  .Home .CardGrid {
+  .HomePage .CardGrid {
     display: grid; /* the native way of creating columns withouth hacks or frameworks */
     grid-template-columns: 1fr 1fr; /* each fr is a equal space column. */
     grid-column-gap: 16px;
@@ -27,38 +27,38 @@
 }
 
 @media only screen and (min-width: 660px) {
-  .Home .container {
+  .HomePage .container {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .Home .container {
+  .HomePage .container {
     max-width: calc(3 * 320px + 16px);
   }
 
-  .Home .CardGrid {
+  .HomePage .CardGrid {
     grid-template-columns: 1fr 1fr 1fr; 
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  .Home .container {
+  .HomePage .container {
     max-width: calc(4 * 320px + 16px);
   }
 
-  .Home .CardGrid {
+  .HomePage .CardGrid {
     grid-template-columns: 1fr 1fr 1fr 1fr; 
   }
 }
 
 @media only screen and (min-width: 1366px) {
-  .Home .container {
+  .HomePage .container {
     max-width: calc(5 * 320px + 16px);
   }
 
-  .Home .CardGrid {
+  .HomePage .CardGrid {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
   }
 }
