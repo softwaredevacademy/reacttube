@@ -11,8 +11,10 @@ function Home() {
   // Render
   return (
     <div className="Home">
-      {/* <h1 className="title">Recommended</h1> */}
-      <CardList prop={json.videos} />
+      <div className="container">
+        <h1 className="title">Recommended</h1>
+        <CardList prop={json.videos} />
+      </div>
     </div>
   )
 }

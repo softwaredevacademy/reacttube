@@ -17,7 +17,6 @@ The order must be from broad to specific, thats why we import in this order:
 
 /* Modules */
 @import url('./modules/Card.css');
-@import url('./modules/CardList.css');
 @import url('./modules/Header.css');
 
 /* Components */

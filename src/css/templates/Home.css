@@ -3,6 +3,11 @@
   padding-top: 32px;
 }
 
+.Home .container {
+  margin: 0 auto;
+  max-width: 320px;
+}
+
 .Home .title {
   margin-left: 8px;
   margin-bottom: 16px;
@@ -11,38 +16,49 @@
 
 /* YouTube breakpoints */
 @media only screen and (min-width: 500px) {
+  .Home .container {
+    max-width: calc(2 * 320px + 16px); /* the max width is 2 columns + the gap */
+  }
   .Home .CardList {
     display: grid; /* the native way of creating columns withouth hacks or frameworks */
-    max-width: calc(2 * 320px + 16px); /* the max width is 2 columns + the gap */
     grid-template-columns: 1fr 1fr; /* each fr is a equal space column. */
     grid-column-gap: 16px;
   }
 }
 
-@media only screen and (min-width: 600px) {
-  .Home {
+@media only screen and (min-width: 660px) {
+  .Home .container {
     padding-left: 20px;
     padding-right: 20px;
   }
 }
 
 @media only screen and (min-width: 900px) {
-  .Home .CardList {
+  .Home .container {
     max-width: calc(3 * 320px + 16px);
+  }
+
+  .Home .CardList {
     grid-template-columns: 1fr 1fr 1fr; 
   }
 }
 
 @media only screen and (min-width: 1000px) {
-  .Home .CardList {
+  .Home .container {
     max-width: calc(4 * 320px + 16px);
+  }
+
+  .Home .CardList {
     grid-template-columns: 1fr 1fr 1fr 1fr; 
   }
 }
 
 @media only screen and (min-width: 1366px) {
-  .Home .CardList {
+  .Home .container {
     max-width: calc(5 * 320px + 16px);
+  }
+
+  .Home .CardList {
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
   }
 }
