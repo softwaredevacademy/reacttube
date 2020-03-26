@@ -13,11 +13,11 @@ function VideoPage({ match }) {
   return (
     <div className="VideoPage">
       <header className="Header dark">
-        <Link to="/"><img src={require('../images/logo-dark.svg')} alt="ReactTube logo" /></Link>
+        <Link to="/"><img src={require('../images/logo/logo-dark.svg')} alt="ReactTube logo" /></Link>
       </header >
 
       <div className="video-container">
-        <video controls src={require('../videos/' + video.video)} />
+        <video controls src={require('../videos/' + video.media + '.mp4')} />
       </div>
 
       <div className="body-container">

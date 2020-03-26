@@ -13,7 +13,7 @@ function HomePage() {
   return (
     <div className="HomePage">
       <header className="Header light">
-        <Link to="/"><img src={require('../images/logo-light.svg')} alt="ReactTube logo" /></Link>
+        <Link to="/"><img src={require('../images/logo/logo-light.svg')} alt="ReactTube logo" /></Link>
       </header >
 
       <div className="container">
