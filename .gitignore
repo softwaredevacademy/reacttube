@@ -2,3 +2,4 @@
 node_modules
 build
 *.mp4
+.DS_Store
