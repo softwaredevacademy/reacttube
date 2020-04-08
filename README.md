@@ -1,0 +1,1 @@
+To run the project first install the dependencies using `npm install` and then start the project using `react-scripts start`.
