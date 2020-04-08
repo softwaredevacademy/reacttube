@@ -17,7 +17,7 @@ export default function VideoPage({ match }) {
       <Header hasLightTheme={false} />
 
       <div className='video-container'>
-        <video autoPlay controls>
+        <video controls>
           <source src={require(`../../assets/videos/${video.media}.mp4`)} type='video/mp4' />
         </video>
       </div>
