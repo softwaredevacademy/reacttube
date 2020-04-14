@@ -20,7 +20,7 @@ export default function ResultsPage({ match }) {
       <Header hasLightTheme={true} />
 
       <div className='container'>
-        Filter results by:
+        Filter results by: 
         <button onClick={() => setCards(sortCards("title", results))}>Name</button>
         <button onClick={() => setCards(sortCards("channelName", results))}>Channel</button>
         <hr />
