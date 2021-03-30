@@ -18,7 +18,7 @@ export default function ResultsPage({ match }) {
   function sortCards(key, data) {
     const sortedResults = data.sort((a, b) => (a[key] > b[key] ? 1 : -1));
     const renderedCards = sortedResults.map((item) => (
-      <Card key={item.id} prop={item} />
+      <Card key={item.id} information={item} />
     ));
 
     return renderedCards;
