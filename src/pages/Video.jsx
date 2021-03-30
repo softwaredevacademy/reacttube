@@ -1,15 +1,16 @@
-// React core
+// NPM Packages
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Components
-import Header from "../modules/Header";
+// Project files
+import Header from "../components/Header";
+import Information from "../information.json";
 
 export default function VideoPage({ match }) {
   // Data
-  const information = require("../../information.json");
   const id = Number(match.params.id); // convert to number to do an exact equality comparisson
-  const video = information.find((object) => object.id === id);
+  const thumbnail = require(`../assets/images/channels/${video.channelThumb}.jpg`);
+  const video = Information.find((object) => object.id === id);
 
   // Render
   return (
@@ -34,7 +35,7 @@ export default function VideoPage({ match }) {
           <div className="left">
             <img
               className="channel-thumb"
-              src={require(`../../assets/images/channels/${video.channelThumb}.jpg`)}
+              src={thumbnail}
               alt="Channel thumbnail"
             />
           </div>

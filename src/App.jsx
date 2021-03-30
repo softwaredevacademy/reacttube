@@ -1,26 +1,23 @@
-// React core
-import React from 'react'
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+// NPM Packages
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-// Components
-import HomePage from './components/templates/HomePage'
-import ResultsPage from './components/templates/ResultsPage'
-import VideoPage from './components/templates/VideoPage'
-
-// Style
-import './style/style.css'
+// Project files
+import Home from "./pages/Home";
+import Results from "./pages/Results";
+import Video from "./pages/Video";
+import "./style/style.css";
 
 export default function App() {
-  // Render
   return (
-    <Router>
-      <main className='App'>
+    <div className="App">
+      <Router>
         <Switch>
-          <Route path='/' exact component={HomePage} />
-          <Route path='/results/:query' component={ResultsPage} />
-          <Route path='/video/:id' component={VideoPage} />
+          <Route path="/" exact component={Home} />
+          <Route path="/results/:query" component={Results} />
+          <Route path="/video/:id" component={Video} />
         </Switch>
-      </main>
-    </Router>
-  )
+      </Router>
+    </div>
+  );
 }
