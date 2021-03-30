@@ -8,8 +8,8 @@ import Information from "../information.json";
 
 export default function VideoPage({ match }) {
   // Data
-  const id = Number(match.params.id); // convert to number to do an exact equality comparisson
-  const video = Information.find((object) => object.id === id);
+  const id = match.params.id;
+  const video = Information.find((object) => object.id == id);
   const thumbnail = require(`../assets/images/channels/${video.channelThumb}`);
 
   // Render
@@ -31,6 +31,7 @@ export default function VideoPage({ match }) {
 
         <hr />
 
+        {/* This can be refactored to a component called VideoDescription */}
         <div className="meta-data">
           <div className="left">
             <img
@@ -40,7 +41,7 @@ export default function VideoPage({ match }) {
             />
           </div>
           <div className="right">
-            <h1 className="title">{video.channelName}</h1>
+            <h2 className="title">{video.channelName}</h2>
             <p className="description">{video.suscribers} suscribers</p>
             <p className="description">{video.description}</p>
           </div>
