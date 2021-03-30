@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 
 export default function Card({ information }) {
   // Properties
-  const videoThumbnail = require(`../assets/images/${information.thumb}.jpg`);
-  const channelThumbnail = require(`../assets/images/channels/${information.channelThumb}.jpg`);
+  const videoThumbnail = require(`../assets/images/${information.thumb}`);
+  const channelThumbnail = require(`../assets/images/channels/${information.channelThumb}`);
 
   return (
     <article className="Card">
