@@ -14,7 +14,7 @@ export default function Card({ information }) {
           className="preview"
           src={videoThumbnail}
           alt={information.description}
-        ></img>
+        />
       </Link>
 
       <div className="meta-data">
