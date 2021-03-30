@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 
 export default function Card({ information }) {
   // Properties
-  const videoThumbnail = require(`../assets/images/${information.thumb}`);
-  const channelThumbnail = require(`../assets/images/channels/${information.channelThumb}`);
+  const videoThumb = require(`../assets/images/${information.thumb}`);
+  const channelThumb = require(`../assets/images/channels/${information.channelThumb}`);
+  console.log("channelThumb", videoThumb);
 
   return (
     <article className="Card">
       <Link to={`/video/${information.id}`}>
         <img
           className="preview"
-          src={videoThumbnail}
+          src={videoThumb}
           alt={information.description}
         />
       </Link>
@@ -21,7 +22,7 @@ export default function Card({ information }) {
         <div className="left">
           <img
             className="channel-thumb"
-            src={channelThumbnail}
+            src={channelThumb}
             alt="Channel thumbnail"
           />
         </div>

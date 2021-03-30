@@ -2,12 +2,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header(props) {
+export default function Header({ hasLightTheme }) {
   // State
   const [query, setQuery] = useState("");
 
   // Properties
-  const color = props.hasLightTheme ? "light" : "dark";
+  const color = hasLightTheme ? "light" : "dark";
   const logo = require(`../assets/images/logo/logo-${color}.svg`);
 
   return (
@@ -16,6 +16,7 @@ export default function Header(props) {
         <img src={logo} alt="Logo" />
       </Link>
 
+      {/* Semantically this can be a form, but the links neeeds to be refactor into a submit */}
       <div className="search-bar">
         <input
           placeholder="Search"
