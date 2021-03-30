@@ -3,12 +3,14 @@ import React from "react";
 
 // Project files
 import Information from "../information.json";
-import Header from "../modules/Header";
-import Card from "../modules/Card";
+import Header from "../components/Header";
+import Card from "../components/Card";
 
 export default function HomePage() {
   // Properties
-  const cards = Information.map((item) => <Card key={item.id} prop={item} />);
+  const cards = Information.map((item) => (
+    <Card key={item.id} information={item} />
+  ));
 
   return (
     <div className="HomePage">

@@ -2,17 +2,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default function Card(props) {
-  const prop = props.prop;
+export default function Card({ information }) {
+  // Properties
+  const videoThumbnail = require(`../assets/images/${information.thumb}.jpg`);
+  const channelThumbnail = require(`../assets/images/channels/${information.channelThumb}.jpg`);
 
-  // Render
   return (
     <article className="Card">
-      <Link to={"/video/" + prop.id}>
+      <Link to={`/video/${information.id}`}>
         <img
           className="preview"
-          src={require(`../../assets/images/${prop.thumb}.jpg`)}
-          alt={prop.description}
+          src={videoThumbnail}
+          alt={information.description}
         ></img>
       </Link>
 
@@ -20,14 +21,14 @@ export default function Card(props) {
         <div className="left">
           <img
             className="channel-thumb"
-            src={require(`../../assets/images/channels/${prop.channelThumb}.jpg`)}
+            src={channelThumbnail}
             alt="Channel thumbnail"
           />
         </div>
         <div className="right">
-          <h1 className="title">{prop.title}</h1>
-          <p className="description">{prop.channelName}</p>
-          <p className="description">{prop.views} views</p>
+          <h1 className="title">{information.title}</h1>
+          <p className="description">{information.channelName}</p>
+          <p className="description">{information.views} views</p>
         </div>
       </div>
     </article>

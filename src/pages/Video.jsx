@@ -9,8 +9,8 @@ import Information from "../information.json";
 export default function VideoPage({ match }) {
   // Data
   const id = Number(match.params.id); // convert to number to do an exact equality comparisson
-  const thumbnail = require(`../assets/images/channels/${video.channelThumb}.jpg`);
   const video = Information.find((object) => object.id === id);
+  const thumbnail = require(`../assets/images/channels/${video.channelThumb}.jpg`);
 
   // Render
   return (
